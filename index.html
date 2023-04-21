@@ -1,427 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tedbucks</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Tedbucks" />
-    <meta property="og:title" content="Tedbucks Coffee" />
-    <meta
-      property="og:description"
-      content="It is a cloning project for Starbucks homepage to create a portfolio."
-    />
-    <meta property="og:image" content="./images/starbucks_seo.jpg" />
-    <meta property="og:url" content="#" />
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="Tedbucks" />
-    <meta property="twitter:title" content="Tedbucks Coffee" />
-    <meta
-      property="twitter:description"
-      content="It is a cloning project for Starbuck homepage to create a portfolio."
-    />
-    <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
-    <meta property="twitter:url" content="#" />
-    <link rel="icon" href="./favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script defer src="./js/main.js"></script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="inner">
-        <a href="/" class="logo">
-          <img src="./images/starbucks_logo.png" alt="starbucksLogo" />
-        </a>
 
-        <div class="sub-menu">
-          <ul class="menu">
-            <li><a href="/signin">Sign In</a></li>
-            <li><a href="javascript:void(0)">My Tedbucks</a></li>
-            <li><a href="javascript:void(0)">Customer Service & Ideas</a></li>
-            <li><a href="javascript:void(0)">Find a Store</a></li>
-          </ul>
-          <div class="search">
-            <input type="text" />
-            <div class="material-icons">search</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tedbucks</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tedbucks" />
+  <meta property="og:title" content="Tedbucks Coffee" />
+  <!--Open Graph-->
+  <meta property="og:description" content="It is a cloning project for Starbucks homepage to create a portfolio." />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="#" />
+  <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Tedbucks" />
+  <meta property="twitter:title" content="Tedbucks Coffee" />
+  <meta property="twitter:description" content="It is a cloning project for Starbuck homepage to create a portfolio." />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+  <meta property="twitter:url" content="#" />
+  <!--favicon-->
+  <link rel="icon" href="./favicon.png" />
+  <!--reset.css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - Nanum Gothic-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- main.css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- main.js -->
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <a href="/" class="logo">
+        <img src="./images/starbucks_logo.png" alt="starbucksLogo" />
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li><a href="/signin">Sign In</a></li>
+          <li><a href="javascript:void(0)">My Tedbucks</a></li>
+          <li><a href="javascript:void(0)">Customer Service & Ideas</a></li>
+          <li><a href="javascript:void(0)">Find a Store</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" />
+          <div class="material-icons">search</div>
+        </div>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">COFFEE</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Coffee</h4>
+                  <ul>
+                    <li>Tedbucks Beans</li>
+                    <li>Tedbucks Via</li>
+                    <li>Tedbucks Origami</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Espresso Drink</h4>
+                  <ul>
+                    <li>Doppio</li>
+                    <li>Espresso Macchiato</li>
+                    <li>Americano</li>
+                    <li>Macchiato</li>
+                    <li>Cappuccino</li>
+                    <li>Latte</li>
+                    <li>Mocha</li>
+                    <li>Ristretto Bianco</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Coffee Story</h4>
+                  <ul>
+                    <li>Tedbucks Roast Spectrum</li>
+                    <li>The Best Arabica Beans</li>
+                    <li>Until A Cup Of Coffee Is Done</li>
+                    <li>Clover ® Coffee Extraction System</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>How To Enjoy The Best Coffee</h4>
+                  <ul>
+                    <li>Coffee Press</li>
+                    <li>Pour Over</li>
+                    <li>Iced Pour Over</li>
+                    <li>Coffee Maker</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Find the coffee that suits you</h4>
+                <p>Tedbucks will find the coffee that suits you</p>
+                <h4>How to enjoy the best coffee</h4>
+                <p>Enjoy a variety of flavors of coffee in many ways</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MENU</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Beverage</h4>
+                  <ul>
+                    <li>Cold Brew</li>
+                    <li>Brewed Coffee</li>
+                    <li>Espresso</li>
+                    <li>Frappuccino</li>
+                    <li>Blended Drink</li>
+                    <li>Tedbucks Pio</li>
+                    <li>Tea (Tvana)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Food</h4>
+                  <ul>
+                    <li>Bakery</li>
+                    <li>Cake</li>
+                    <li>Sandwich & Salad</li>
+                    <li>Warm Food</li>
+                    <li>Fruit & Yogurt</li>
+                    <li>Snack & Mini Dessert</li>
+                    <li>Ice Cream</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Product</h4>
+                  <ul>
+                    <li>Mug</li>
+                    <li>Glass</li>
+                    <li>Plastic Tumbler</li>
+                    <li>Stainless Tumbler</li>
+                    <li>Thermos</li>
+                    <li>Accessory</li>
+                    <li>Coffee supplies</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Card</h4>
+                  <ul>
+                    <li>Real Cards</li>
+                    <li>E-Gift Cards</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>About The Menu</h4>
+                  <ul>
+                    <li>Cold Brew</li>
+                    <li>Tedbucks Tvana</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4 class="new">Tedbucks Tvana</h4>
+                <p>
+                  It presents new flavors and fragrances with unique
+                  ingredients such as various tea leaves and spices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">STORE</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Find A Store</h4>
+                  <ul>
+                    <li>Quick search</li>
+                    <li>Regional Search</li>
+                    <li>My Store</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Tedbucks Story</h4>
+                  <ul>
+                    <li>Tvana Inspired Store</li>
+                    <li>Farmier Park</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Find A Store</h4>
+                <p>Find For Stores Faster</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">RESPONSIBILITY</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Community Engagement</h4>
+                  <ul>
+                    <li>Hope Delivery Campaign</li>
+                    <li>Talent Donation Cafe News</li>
+                    <li>Community Store</li>
+                    <li>Nurture Young Talent</li>
+                    <li>Love Our Farm Products Campaign</li>
+                    <li>Protect Our Culture</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Environmental Protection</h4>
+                  <ul>
+                    <li>Use recyclable Items</li>
+                    <li>Stores Without Disposable Cups</li>
+                    <li>Recycling Coffee Beans</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Ethical Purchasing</h4>
+                  <ul>
+                    <li>Ethical Purchase Of Coffee Beans</li>
+                    <li>Fairtrade Certification</li>
+                    <li>Coffee Farmers Support Activities</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Global Social Contribution</h4>
+                  <ul>
+                    <li>Ethical Management Report</li>
+                    <li>Tedbucks Foundation</li>
+                    <li>Global Volunteer Month</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Recycle Coffee Beans</h4>
+                <p>Recycle Tedbucks Coffee Beans.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MY TEDBUCKS REWARDS</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>My Tedbucks Rewards</h4>
+                  <ul>
+                    <li>Introducing My Tedbucks Rewards</li>
+                    <li>Rating & Benefits</li>
+                    <li>Tedbucks Star</li>
+                    <li>FAQ</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Tedbucks Cards</h4>
+                  <ul>
+                    <li>Introducing Tedbucks Cards</li>
+                    <li>Tedbucks Cards Gallery</li>
+                    <li>Registration & inquiry</li>
+                    <li>Charging & Usage Information</li>
+                    <li>Loss Report & Refund Request</li>
+                    <li>FAQ</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Tedbucks E-Gift Cards</h4>
+                  <ul>
+                    <li>Introducing Tedbucks e-Gift Cards</li>
+                    <li>User Guide</li>
+                    <li>Give A Gift</li>
+                    <li>FAQ</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Register Tedbucks Card</h4>
+                <p></p>
+                <p>
+                  After Registering Your Card, Enjoy The Reward Service &
+                  Check The Usage History.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">WHAT'S NEW</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Promotions & Events</h4>
+                  <ul>
+                    <li>Overall</li>
+                    <li>Tedbucks Card</li>
+                    <li>My Tedbucks Rewards</li>
+                    <li>Online</li>
+                    <li>2023 Tedbucks Planner</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>New News</h4>
+                  <ul>
+                    <li>Overall</li>
+                    <li>Product Launch</li>
+                    <li>Tedbucks Culture</li>
+                    <li>Tedbucks Social Contribution</li>
+                    <li>Tedbucks Cards Launch</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Events By Store</h4>
+                  <ul>
+                    <li>General Store</li>
+                    <li>New Store</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Events By Store</h4>
+                <p>You Can Check Tedbucks' Store Event Information.</p>
+                <h4>Social Tedbucks</h4>
+                <p>Meet Tedbucks Through Various Tedbucks SNS channels!</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1-custom.jpg" alt="Badge" />
+      </div>
+      <div class="badge">
+        <img src="./images/badge2-custom.jpg" alt="Badge" />
+      </div>
+    </div>
+  </header>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="./images/visual_title-custom.png" alt="TEDBUCKS DELIGHTFUL START TO THE YEARS" />
+        <a href="javascript:void(0)" class="btn btn--brown">See More</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
+        <img src="./images/visual_cup1_text-custom.png" alt="OATMEAL LATTE" class="cup1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new TEDBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" />
+        <img src="./images/visual_cup2_text-custom.png" alt="TEDBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+    </div>
+  </section>
+
+  <section class="notice">
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner__left">
+          <h2>Notice</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">Changes in Tedbucks store operating hours for year-end
+                  season</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[Winner Announcement] 2023 Tedbucks Planner Receipt Event</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">Tedbucks Coffee application version update notice</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[Winner Announcement] New Year e-Receipt Event</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons">add_circle</div>
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>Tedbucks Promotion</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
           </div>
         </div>
-
-        <ul class="main-menu">
-          <li class="item">
-            <div class="item__name">COFFEE</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>Coffee</h4>
-                    <ul>
-                      <li>Tedbucks Beans</li>
-                      <li>Tedbucks Via</li>
-                      <li>Tedbucks Origami</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Espresso Drink</h4>
-                    <ul>
-                      <li>Doppio</li>
-                      <li>Espresso Macchiato</li>
-                      <li>Americano</li>
-                      <li>Macchiato</li>
-                      <li>Cappuccino</li>
-                      <li>Latte</li>
-                      <li>Mocha</li>
-                      <li>Ristretto Bianco</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Coffee Story</h4>
-                    <ul>
-                      <li>Tedbucks Roast Spectrum</li>
-                      <li>The Best Arabica Beans</li>
-                      <li>Until A Cup Of Coffee Is Done</li>
-                      <li>Clover ® Coffee Extraction System</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>How To Enjoy The Best Coffee</h4>
-                    <ul>
-                      <li>Coffee Press</li>
-                      <li>Pour Over</li>
-                      <li>Iced Pour Over</li>
-                      <li>Coffee Maker</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4>Find the coffee that suits you</h4>
-                  <p>Tedbucks will find the coffee that suits you</p>
-                  <h4>How to enjoy the best coffee</h4>
-                  <p>Enjoy a variety of flavors of coffee in many ways</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">MENU</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>Beverage</h4>
-                    <ul>
-                      <li>Cold Brew</li>
-                      <li>Brewed Coffee</li>
-                      <li>Espresso</li>
-                      <li>Frappuccino</li>
-                      <li>Blended Drink</li>
-                      <li>Tedbucks Pio</li>
-                      <li>Tea (Tvana)</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Food</h4>
-                    <ul>
-                      <li>Bakery</li>
-                      <li>Cake</li>
-                      <li>Sandwich & Salad</li>
-                      <li>Warm Food</li>
-                      <li>Fruit & Yogurt</li>
-                      <li>Snack & Mini Dessert</li>
-                      <li>Ice Cream</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Product</h4>
-                    <ul>
-                      <li>Mug</li>
-                      <li>Glass</li>
-                      <li>Plastic Tumbler</li>
-                      <li>Stainless Tumbler</li>
-                      <li>Thermos</li>
-                      <li>Accessory</li>
-                      <li>Coffee supplies</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Card</h4>
-                    <ul>
-                      <li>Real Cards</li>
-                      <li>E-Gift Cards</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>About The Menu</h4>
-                    <ul>
-                      <li>Cold Brew</li>
-                      <li>Tedbucks Tvana</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4 class="new">Tedbucks Tvana</h4>
-                  <p>
-                    It presents new flavors and fragrances with unique
-                    ingredients such as various tea leaves and spices.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">STORE</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>Find A Store</h4>
-                    <ul>
-                      <li>Quick search</li>
-                      <li>Regional Search</li>
-                      <li>My Store</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Tedbucks Story</h4>
-                    <ul>
-                      <li>Tvana Inspired Store</li>
-                      <li>Farmier Park</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4>Find A Store</h4>
-                  <p>Find For Stores Faster</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">RESPONSIBILITY</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>Community Engagement</h4>
-                    <ul>
-                      <li>Hope Delivery Campaign</li>
-                      <li>Talent Donation Cafe News</li>
-                      <li>Community Store</li>
-                      <li>Nurture Young Talent</li>
-                      <li>Love Our Farm Products Campaign</li>
-                      <li>Protect Our Culture</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Environmental Protection</h4>
-                    <ul>
-                      <li>Use recyclable Items</li>
-                      <li>Stores Without Disposable Cups</li>
-                      <li>Recycling Coffee Beans</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Ethical Purchasing</h4>
-                    <ul>
-                      <li>Ethical Purchase Of Coffee Beans</li>
-                      <li>Fairtrade Certification</li>
-                      <li>Coffee Farmers Support Activities</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Global Social Contribution</h4>
-                    <ul>
-                      <li>Ethical Management Report</li>
-                      <li>Tedbucks Foundation</li>
-                      <li>Global Volunteer Month</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4>Recycle Coffee Beans</h4>
-                  <p>Recycle Tedbucks Coffee Beans.</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">MY TEDBUCKS REWARDS</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>My Tedbucks Rewards</h4>
-                    <ul>
-                      <li>Introducing My Tedbucks Rewards</li>
-                      <li>Rating & Benefits</li>
-                      <li>Tedbucks Star</li>
-                      <li>FAQ</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Tedbucks Cards</h4>
-                    <ul>
-                      <li>Introducing Tedbucks Cards</li>
-                      <li>Tedbucks Cards Gallery</li>
-                      <li>Registration & inquiry</li>
-                      <li>Charging & Usage Information</li>
-                      <li>Loss Report & Refund Request</li>
-                      <li>FAQ</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Tedbucks E-Gift Cards</h4>
-                    <ul>
-                      <li>Introducing Tedbucks e-Gift Cards</li>
-                      <li>User Guide</li>
-                      <li>Give A Gift</li>
-                      <li>FAQ</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4>Register Tedbucks Card</h4>
-                  <p></p>
-                  <p>
-                    After Registering Your Card, Enjoy The Reward Service &
-                    Check The Usage History.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="item__name">WHAT'S NEW</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>Promotions & Events</h4>
-                    <ul>
-                      <li>Overall</li>
-                      <li>Tedbucks Card</li>
-                      <li>My Tedbucks Rewards</li>
-                      <li>Online</li>
-                      <li>2023 Tedbucks Planner</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>New News</h4>
-                    <ul>
-                      <li>Overall</li>
-                      <li>Product Launch</li>
-                      <li>Tedbucks Culture</li>
-                      <li>Tedbucks Social Contribution</li>
-                      <li>Tedbucks Cards Launch</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>Events By Store</h4>
-                    <ul>
-                      <li>General Store</li>
-                      <li>New Store</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="contents__texture">
-                <div class="inner">
-                  <h4>Events By Store</h4>
-                  <p>You Can Check Tedbucks' Store Event Information.</p>
-                  <h4>Social Tedbucks</h4>
-                  <p>Meet Tedbucks Through Various Tedbucks SNS channels!</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
+    </div>
 
-      <div class="badges">
-        <div class="badge">
-          <img src="./images/badge1-custom.jpg" alt="Badge" />
-        </div>
-        <div class="badge">
-          <img src="./images/badge2-custom.jpg" alt="Badge" />
+    <div class="promotion">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide1-custom.jpg"
+              alt="Start 2023 New Year with Tedbucks with fun and energy!" />
+            <a href="javascript:void(0)" class="btn">See More</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide2-custom.jpg"
+              alt="Buy a Tedbucks e-Gift card for more than $30, and get an Americano e-coupon" />
+            <a href="javascript:void(0)" class="btn">See More</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide3-custom.jpg"
+              alt="Buy New Year's food as a set and get a New Year drink for free" />
+            <a href="javascript:void(0)" class="btn">See More</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide4-custom.jpg"
+              alt="Customers who purchase $30 or more, and get an Americano e-coupon" />
+            <a href="javascript:void(0)" class="btn">See More</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide5-custom.jpg" alt="2023 DIGITAL LUCKY DRAW 100% chance of winning!" />
+            <a href="javascript:void(0)" class="btn">See More</a>
+          </div>
         </div>
       </div>
-    </header>
-
-    <!-- VISUAL -->
-    <section class="visual">
-      <div class="inner">
-        <div class="title fade-in">
-          <img
-            src="./images/visual_title-custom.png"
-            alt="TEDBUCKS DELIGHTFUL START TO THE YEARS"
-          />
-          <a href="javascript:void(0)" class="btn btn--brown">Details</a>
-        </div>
-        <div class="fade-in">
-          <img
-            src="./images/visual_cup1.png"
-            alt="new OATMEAL LATTE"
-            class="cup1 image"
-          />
-          <img
-            src="./images/visual_cup1_text-custom.png"
-            alt="OATMEAL LATTE"
-            class="cup1 text"
-          />
-        </div>
-        <div class="fade-in">
-          <img
-            src="./images/visual_cup2.png"
-            alt="new TEDBUCKS CARAMEL CRUMBLE MOCHA"
-            class="cup2 image"
-          />
-          <img
-            src="./images/visual_cup2_text-custom.png"
-            alt="TEDBUCKS CARAMEL CRUMBLE MOCHA"
-            class="cup2 text"
-          />
-        </div>
-        <div class="fade-in">
-          <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
-        </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
       </div>
-    </section>
-  </body>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

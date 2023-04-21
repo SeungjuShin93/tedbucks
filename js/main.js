@@ -41,3 +41,40 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1,
   });
 });
+
+new Swiper('.notice-line .swiper', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true,
+});
+new Swiper('.promotion .swiper', {
+  slidesPerView: 3, // Number of slides per view
+  spaceBetween: 10, // Spacing between slides
+  centeredSlides: true, // Show first slide in the center
+  loop: true,
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  pagination: {
+    // Enable slide pagination
+    el: '.promotion .swiper-pagination', // Selector for pagination element
+    clickable: true, // Allow user to control page number element
+  },
+  navigation: {
+    // Enable previous/next slide buttons
+    prevEl: '.promotion .swiper-prev', // Selector for previous button
+    nextEl: '.promotion .swiper-next', // Selector for next button
+  },
+});
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener('click', function () {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide');
+  } else {
+    promotionEl.classList.remove('hide');
+  }
+});
