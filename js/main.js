@@ -106,3 +106,6 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show') // Add the 'show' class when the element is visible on screen
     .addTo(new ScrollMagic.Controller()); // Assign the scene to the controller (required!)
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
