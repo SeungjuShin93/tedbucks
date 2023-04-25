@@ -95,3 +95,14 @@ function floatingObject(selector, delay, size) {
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', 0.5, 15);
 floatingObject('.floating3', 1.5, 20);
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic.Scene({
+    // Add a scene to monitor
+    triggerElement: spyEl, // Specify the element to monitor for visibility
+    triggerHook: 0.8, // Monitor visibility at 80% of the screen
+  })
+    .setClassToggle(spyEl, 'show') // Add the 'show' class when the element is visible on screen
+    .addTo(new ScrollMagic.Controller()); // Assign the scene to the controller (required!)
+});
