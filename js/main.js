@@ -16,23 +16,41 @@ searchInputEl.addEventListener('blur', function () {
 });
 
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
+
 window.addEventListener(
   'scroll',
   _.throttle(function () {
     console.log(window.scrollY);
     if (window.scrollY > 500) {
+      // hide badge
       gsap.to(badgeEl, 0.6, {
         opacity: 0,
         display: 'none',
       });
+      // show #to-top
+      gsap.to(toTopEl, 0.2, {
+        x: 0,
+      });
     } else {
+      // show badge
       gsap.to(badgeEl, 0.6, {
         opacity: 1,
         display: 'block',
       });
+      // hide #to-top
+      gsap.to(toTopEl, 0.2, {
+        x: 100,
+      });
     }
   }, 300)
 );
+
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
